@@ -1,0 +1,11 @@
+---
+applications:
+- name: mms_backend
+  random-route: true
+  path: /
+  memory: 256M
+  buildpacks:
+  - nodejs_buildpack
+  services:
+  - postgres_db
+  - mms_logger
